@@ -6,11 +6,10 @@ import org.apache.commons.net.ftp.FTPClient;
 import java.io.*;
 import java.util.Scanner;
 
-public class SincronizacionFTP {
+public class SincronizacionFTP {//Prueba B
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         // Solicitar la ruta de la carpeta local
         System.out.print("Introduce la ruta de la carpeta local a sincronizar: ");
         String carpetaLocal = scanner.nextLine();
@@ -126,8 +125,8 @@ public class SincronizacionFTP {
     private static void descargarArchivoFTP(String archivoRemoto, String archivoLocal) {
         String server = "127.0.0.1"; // Dirección del servidor FTP
         int port = 21; // Puerto FTP
-        String user = "usuario"; // Nombre de usuario FTP
-        String pass = "contraseña"; // Contraseña FTP
+        String user = "root"; // Nombre de usuario FTP
+        String pass = "123456"; // Contraseña FTP
 
         FTPClient ftpClient = new FTPClient();
         try {

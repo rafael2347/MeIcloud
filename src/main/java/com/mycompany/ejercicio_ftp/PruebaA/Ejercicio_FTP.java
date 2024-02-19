@@ -8,7 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
 
-public class Ejercicio_FTP {
+public class Ejercicio_FTP {//Prueba A
 
     public static void main(String[] args) {
         // Solicitar la ruta de la carpeta
