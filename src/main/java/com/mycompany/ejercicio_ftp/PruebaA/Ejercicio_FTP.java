@@ -1,4 +1,4 @@
-package com.mycompany.ejercicio_ftp;
+package com.mycompany.ejercicio_ftp.PruebaA;
 
 import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
@@ -74,7 +74,7 @@ public class Ejercicio_FTP {
             File zipFile = new File(zipFileName);
             InputStream inputStream = new FileInputStream(zipFile);
 
-            String remoteFilePath = "/carpeta_remota/" + zipFileName; // Ruta en el servidor FTP donde se va a almacenar el archivo
+            String remoteFilePath = "/remote-folder/" + zipFileName; // Ruta en el servidor FTP donde se va a almacenar el archivo
 
             boolean done = ftpClient.storeFile(remoteFilePath, inputStream);
             inputStream.close();
